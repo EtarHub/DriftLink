@@ -1,0 +1,55 @@
+{
+  "target_domains": [
+    "youtube.com",
+    "googlevideo.com",
+    "ytimg.com",
+    "ggpht.com",
+    "youtu.be",
+    "googleapis.com",
+    "gvt1.com",
+    "gvt2.com",
+    "youtube-nocookie.com",
+    "youtubei.googleapis.com"
+  ],
+  "strategies": [
+    {
+      "name": "home_cascade_badsum",
+      "type": "cascade_fake_disorder",
+      "ttl_list": [
+        3,
+        4,
+        5
+      ],
+      "use_bad_checksum": true
+    },
+    {
+      "name": "office_clean_multisplit",
+      "type": "multisplit"
+    },
+    {
+      "name": "strict_ttl_fake",
+      "type": "cascade_fake_disorder",
+      "ttl_list": [
+        2,
+        3,
+        4
+      ],
+      "use_bad_checksum": false
+    }
+  ],
+  "desync": {
+    "fake_sni": "www.google.com",
+    "block_quic": true,
+    "auto_switch_timeout": 2.5
+  },
+  "logging": {
+    "verbose": true
+  },
+  "favorites": [
+    {
+      "name": "Clean MultiSplit (без фейков)",
+      "type": "multisplit"
+    }
+  ],
+  "history": []
+}
