@@ -51,5 +51,64 @@
       "type": "multisplit"
     }
   ],
-  "history": []
+  "history": [
+    {
+      "strategy": {
+        "name": "Gen_TTL(8)_BadSum",
+        "type": "cascade_fake_disorder",
+        "ttl_list": "8",
+        "use_bad_checksum": true
+      },
+      "ping_ms": 113,
+      "timestamp": "23.11 11:13"
+    },
+    {
+      "strategy": {
+        "name": "Gen_TTL(6)_Clean",
+        "type": "cascade_fake_disorder",
+        "ttl_list": "6",
+        "use_bad_checksum": false
+      },
+      "ping_ms": 93,
+      "timestamp": "23.11 11:13"
+    },
+    {
+      "strategy": {
+        "name": "Gen_TTL(4,6,8)_BadSum",
+        "type": "cascade_fake_disorder",
+        "ttl_list": "4,6,8",
+        "use_bad_checksum": true
+      },
+      "ping_ms": 72,
+      "timestamp": "23.11 11:13"
+    },
+    {
+      "strategy": {
+        "name": "Clean MultiSplit (без фейков)",
+        "type": "multisplit"
+      },
+      "ping_ms": 100,
+      "timestamp": "23.11 11:13"
+    },
+    {
+      "strategy": {
+        "name": "Cascade TTL(5,6,7) + BadSum",
+        "type": "cascade_fake_disorder",
+        "ttl_list": "5,6,7",
+        "use_bad_checksum": true
+      },
+      "ping_ms": 92,
+      "timestamp": "23.11 11:13"
+    },
+    {
+      "strategy": {
+        "name": "Cascade TTL(4,5,6) + BadSum",
+        "type": "cascade_fake_disorder",
+        "ttl_list": "4,5,6",
+        "use_bad_checksum": true
+      },
+      "ping_ms": 89,
+      "timestamp": "23.11 11:13"
+    }
+  ]
 }

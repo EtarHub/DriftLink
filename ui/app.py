@@ -97,7 +97,7 @@ class DriftLinkWindow(QMainWindow):
         self.profiles_btn.setCursor(Qt.CursorShape.PointingHandCursor)
         self.profiles_btn.clicked.connect(self.open_profiles_window)
 
-        self.diag_btn = QPushButton("⚡ Диагностика")
+        self.diag_btn = QPushButton("⚡ Тестирование")
         self.diag_btn.setObjectName("NavButton")
         self.diag_btn.setCursor(Qt.CursorShape.PointingHandCursor)
         self.diag_btn.clicked.connect(self.open_test_window)
